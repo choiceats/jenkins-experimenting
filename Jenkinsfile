@@ -9,7 +9,7 @@ node {
     //      sh "git clean -fdx"
     //    }
     stage('copy_files') {
-      sh "cp src/* build/"
+      sh "cp -R src/* build/"
       sh "echo files in build/"
       sh "ls build/"
     }
