@@ -6,8 +6,8 @@ node {
 
   checkout scm
 
-  def customImage = docker.build("apache-name-test", "-f ${Dockerfile} -t apache-tag")
-  agent { dockerfile true }
+  def customImage = docker.build("apache-name-test", "-f Dockerfile -t apache-tag")
+  // agent { dockerfile true }
 
   try {
 
