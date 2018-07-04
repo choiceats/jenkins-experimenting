@@ -25,7 +25,7 @@ node {
     // }
 
     stage("run_container") {
-      sh "docker run -p 80:80 -dit --name apahe-name-test apache-tag"
+      sh "docker run -p 80:80 -dit --name apache-name-test apache-tag"
     }
 
     //    stage('compile') {
