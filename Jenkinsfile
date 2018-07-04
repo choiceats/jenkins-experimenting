@@ -1,7 +1,7 @@
 node {
   stage("remove_old_containers") {
-    sh "docker kill apache-tag"
-    sh "docker rm apache-tag"
+    // sh "docker kill apache-tag"
+    // sh "docker rm apache-tag"
   }
 
   checkout scm
