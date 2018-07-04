@@ -1,7 +1,10 @@
+#!groovy
+
 node {
   stage("remove_old_containers") {
     sh "docker stop apache-name-test || true"
     sh "docker rm apache-name-test || true"
+    sh "echo ${env.bob}"
   }
 
   checkout scm
